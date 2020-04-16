@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    {% include "squares/head.html"%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style_menu.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/js_style.css' %}" type="text/css">
+</head>
+<div id="menuid" class="menu">
+    <span class="title" onclick="openMenu"></span>
+    <ul>
+        <a href="/"><form class="form"><li>Главная</li></form></a>
+        </form>
+        <a href="js_page.html"><form class="form"><li>Немного Javascript</li></a>
+        </form>
+        <a href="vk_auth.html"><form class="form"><li>Войти через Вконтакте</li></a>
+        </form>
+    </ul>
+    </div>
+<body>
+    {% block content %}
+    {% endblock %}
+
+<script src="{% static 'js/script_menu.js'%}"></script>
+<script src="{% static 'js/js_script.js'%}"></script>
+</body>
+{% include "squares/footer.html"%}
+</html>

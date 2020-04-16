@@ -1,0 +1,48 @@
+{% extends "squares/wrapper.html" %}
+{% load static %}
+{% block content %}
+<header class="backimage">
+    <div class="overlay">
+        <h1 class="header-title">Технологии которые я использовал</h1>
+    </div>
+</header>
+<section class="content">
+    <div class="square">
+        <img src="{% static 'images/css.png' %}" class="square-image" alt="css-logo">
+        <h3 class="square-title">CSS</h3>
+        <p class="square-text">CSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания
+            внешнего вида документа, написанного с использованием языка разметки.</p>
+    </div>
+    <div class="square">
+        <img src="{% static 'images/html.png' %}" class="square-image" alt="html-logo">
+        <h3 class="square-title">HTML</h3>
+        <p class="square-text">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
+            стандартизированный интерпретируемый браузерами язык разметки документов.</p>
+    </div>
+    <div class="square">
+        <img src="{% static 'images/django.png' %}" class="square-image" alt="django-logo">
+        <h3 class="square-title">Django</h3>
+        <p class="square-text">Django (Джанго) — фреймворк для веб-приложений на языке Python, использующий
+            шаблон проектирования MVC. Проект поддерживается Django Software Foundation.</p>
+    </div>
+    <div class="square">
+        <img src="{% static 'images/js.png' %}" class="square-image" alt="js-logo">
+        <h3 class="square-title">JavaScript</h3>
+        <p class="square-text">JavaScript (аббр. JS) — мультипарадигменный язык программирования. Поддерживает
+            объектно-ориентированный, императивный и функциональный стили. </p>
+    </div>
+    <div class="square">
+        <img src="{% static 'images/python.png' %}" class="square-image" alt="python-logo">
+        <h3 class="square-title">Python</h3>
+        <p class="square-text">Python (в русском языке распространено название питон) — высокоуровневый язык
+            программирования общего назначения, ориентированный на повышение читаемости кода. </p>
+    </div>
+    <div class="square">
+        <img src="{% static 'images/ps.png' %}" class="square-image" alt="ps-logo">
+        <h3 class="square-title">Adobe Photoshop</h3>
+        <p class="square-text">Adobe Photoshop — многофункциональный графический редактор, разработанный и
+            распространяемый фирмой Adobe Systems. В основном работает с растровыми изображениями.</p>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "squares/wrapper.html" %}
+{% load static %}
+{% block content %}
+<header class="js">
+    Немного JavaScript
+</header>
+<body>
+    <div class="backm" style="margin-bottom: 25px; text-align: center;">
+        <div class="extra">
+            <p class="question">Какие технологии использовались на сайте?<div class="button">Показать</div></p>
+        </div>
+
+        <div class="imageback">
+            <img class="image" src="{% static 'images/css_ps.png' %}">
+        </div>
+
+        <div class="tech">
+            <span class="text">CSS - чтобы задать стили объектам сайта</span>
+            <img class="cursor" src="{% static 'css/cursor.gif'%}">
+        </div>
+    </div>
+</body>
+{% endblock %}
